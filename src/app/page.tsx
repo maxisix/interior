@@ -1,90 +1,47 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <div className="after:content-[' '] relative h-screen bg-[url('/images/unsplash_dPUWzT5dqz8.jpg')] bg-cover after:absolute after:bottom-0 after:h-72 after:w-full after:bg-gradient">
+        <div className="container mx-auto grid">
+          {/* <Nav /> */}
+
+          <div className="mt-[10%] text-center text-white">
+            <h1 className="text-7xl font-bold">
+              Bring Serenity to Your Place
+              <br /> With Interior
+            </h1>
+            <p className="mt-10 text-2xl">
+              find your dream plant for you home decoration <br /> with us, and
+              we will make it happen.
+            </p>
+
+            <div className="relative z-10 mx-auto mt-10 max-w-[460px]">
+              <input
+                type="text"
+                name="search"
+                placeholder="Search"
+                className="w-full rounded-full border border-white bg-transparent px-7 py-6 placeholder-white outline-0"
+              />
+              <button className="absolute top-[50%] right-3 h-12 w-12 translate-y-[-50%] rounded-full bg-[#525A55] stroke-white text-black hover:bg-white hover:stroke-[#525A55]">
+                <svg
+                  className="mx-auto"
+                  width="23"
+                  height="23"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.7953 20.9181L16.0584 16.1813L20.7953 20.9181ZM16.0584 16.1813C16.8187 15.421 17.4218 14.5184 17.8333 13.525C18.2447 12.5317 18.4565 11.467 18.4565 10.3918C18.4565 9.31661 18.2447 8.25193 17.8333 7.25857C17.4218 6.26521 16.8187 5.36262 16.0584 4.60234C15.2982 3.84205 14.3956 3.23896 13.4022 2.8275C12.4089 2.41604 11.3442 2.20426 10.269 2.20426C9.19377 2.20426 8.12909 2.41604 7.13573 2.8275C6.14237 3.23896 5.23978 3.84205 4.4795 4.60234C2.94404 6.1378 2.08142 8.22034 2.08142 10.3918C2.08142 12.5633 2.94404 14.6458 4.4795 16.1813C6.01496 17.7167 8.0975 18.5794 10.269 18.5794C12.4404 18.5794 14.523 17.7167 16.0584 16.1813V16.1813Z"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
       </div>
     </main>
   )
