@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 export const Nav = () => (
-  <nav className="grid absolute grid-flow-col	gap-6	 text-white z-20 right-12 top-12">
+  <nav className="absolute right-12 top-12	z-20	 grid grid-flow-col gap-6 text-white">
     <Link className="hover:text-[#525A55]" href="/">
       Home
     </Link>
