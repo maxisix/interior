@@ -1,4 +1,6 @@
+import { AnalyticsWrapper } from '@/modules/analytics/analytics.component'
 import { Nav } from '@/modules/nav/nav.component'
+
 import './globals.css'
 
 export const metadata = {
@@ -16,6 +18,7 @@ export default function RootLayout({
       <body>
         <Nav />
         {children}
+        <AnalyticsWrapper />
       </body>
     </html>
   )
