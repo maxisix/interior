@@ -5,7 +5,7 @@ This is a repository for the Project Interior, which is built with NextJS, Tailw
 ### Todo
 
 1. [x] Try Hover / Active etc...
-2. Try Keyframe
+2. [x] Try Keyframe
 3. Try Responsive
 4. Try Design System with CVA
 5. [x] Code an -- Ad --
