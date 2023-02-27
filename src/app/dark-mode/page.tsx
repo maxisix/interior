@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Dark Mode',
+  description: 'A new feature in Tailwind CSS 2.0',
+}
+
 export default function DarkMode() {
   return (
     <div className="container mx-auto grid h-screen items-center justify-center">

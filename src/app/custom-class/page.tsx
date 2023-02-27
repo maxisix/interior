@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Custom Class',
+  description: 'Help the developer to create custom class',
+}
+
 export default function CustomClass() {
   return (
     <div className="container mx-auto grid h-screen items-center justify-center">
