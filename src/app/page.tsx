@@ -5,7 +5,7 @@ export default function Home() {
         <div className="container mx-auto grid">
           {/* <Nav /> */}
 
-          <div className="mt-[128px] text-center text-white">
+          <div className="mt-[270px] text-center">
             <h1 className="text-4xl font-bold md:text-7xl">
               Bring Serenity to Your Place
               <br /> With Interior
@@ -20,7 +20,7 @@ export default function Home() {
                 type="text"
                 name="search"
                 placeholder="Search"
-                className="w-full rounded-full border border-white bg-transparent px-7 py-6 placeholder-white outline-0"
+                className="w-full rounded-full border border-black bg-transparent px-7 py-6 placeholder-black outline-0 dark:border-white dark:placeholder-white"
               />
               <button className="absolute top-[50%] right-3 h-12 w-12 translate-y-[-50%] rounded-full bg-[#525A55] stroke-white text-black hover:bg-white hover:stroke-[#525A55]">
                 <svg

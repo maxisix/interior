@@ -5,7 +5,7 @@ export const metadata = {
 
 export default function Responsive() {
   return (
-    <div className="container mx-auto bg-black text-white">
+    <div className="container mx-auto">
       <div className="flex h-screen flex-col items-center justify-center gap-4 text-center md:flex-row">
         <div className="md:flex-1">
           <h3>Free Shapping</h3>

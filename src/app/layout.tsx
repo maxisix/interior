@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="dark:bg-black dark:text-white">
         <Font>
           <Nav />
           {children}
