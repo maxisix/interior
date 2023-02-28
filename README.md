@@ -6,10 +6,11 @@ This is a repository for the Project Interior, which is built with NextJS, Tailw
 
 1. [x] Try Hover / Active etc...
 2. [x] Try Keyframe
-3. Try Responsive
+3. [x] Try Responsive
 4. Try Design System with CVA
 5. [x] Code an -- Ad --
-6. Try the available plugins. Ex: @tailwindcss/aspect-ratio
+6. Try Dark Mode
+7. Try the available plugins. Ex: @tailwindcss/aspect-ratio
 
 ### Installation
 

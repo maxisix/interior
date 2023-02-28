@@ -17,5 +17,8 @@ export const Nav = () => (
     <Link className="hover:text-[#525A55]" href="/custom-class">
       Custom Class
     </Link>
+    <Link className="hover:text-[#525A55]" href="/responsive">
+      Responsive
+    </Link>
   </nav>
 )

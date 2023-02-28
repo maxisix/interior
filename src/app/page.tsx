@@ -5,12 +5,12 @@ export default function Home() {
         <div className="container mx-auto grid">
           {/* <Nav /> */}
 
-          <div className="mt-[10%] text-center text-white">
-            <h1 className="text-7xl font-bold">
+          <div className="mt-[128px] text-center text-white">
+            <h1 className="text-4xl font-bold md:text-7xl">
               Bring Serenity to Your Place
               <br /> With Interior
             </h1>
-            <p className="mt-10 text-2xl">
+            <p className="mt-10 text-xl md:text-2xl">
               find your dream plant for you home decoration <br /> with us, and
               we will make it happen.
             </p>
