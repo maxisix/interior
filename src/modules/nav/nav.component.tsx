@@ -1,6 +1,6 @@
-'use client'
+"use client"
 
-import Link from 'next/link'
+import Link from "next/link"
 
 export const Nav = () => (
   <nav className="absolute right-12 top-12 z-20 grid grid-flow-col gap-6 font-sans">
@@ -21,8 +21,8 @@ export const Nav = () => (
     </Link>
     <button
       onClick={() => {
-        const html = document.querySelector('html')
-        html?.classList.toggle('dark')
+        const html = document.querySelector("html")
+        html?.classList.toggle("dark")
       }}
     >
       Dark Mode

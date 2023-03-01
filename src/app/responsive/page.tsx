@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Responsive',
-  description: 'Make your website work on all devices',
+  title: "Responsive",
+  description: "Make your website work on all devices",
 }
 
 export default function Responsive() {

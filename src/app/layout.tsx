@@ -1,11 +1,11 @@
-import { AnalyticsWrapper } from '@/modules/analytics/analytics.component'
-import { Font } from '@/modules/font/font.component'
-import { Nav } from '@/modules/nav/nav.component'
-import './globals.css'
+import { AnalyticsWrapper } from "@/modules/analytics/analytics.component"
+import { Font } from "@/modules/font/font.component"
+import { Nav } from "@/modules/nav/nav.component"
+import "./globals.css"
 
 export const metadata = {
-  title: 'Interior design',
-  description: 'For the love of interior design and Tailwind CSS',
+  title: "Interior design",
+  description: "For the love of interior design and Tailwind CSS",
 }
 
 export default function RootLayout({

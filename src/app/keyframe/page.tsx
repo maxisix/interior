@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Keyframe',
-  description: 'Fun way to entertain your users',
+  title: "Keyframe",
+  description: "Fun way to entertain your users",
 }
 
 export default function Keyframe() {

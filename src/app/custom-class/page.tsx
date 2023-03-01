@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Custom Class',
-  description: 'Help the developer to create custom class',
+  title: "Custom Class",
+  description: "Help the developer to create custom class",
 }
 
 export default function CustomClass() {
