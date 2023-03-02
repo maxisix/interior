@@ -1,7 +1,9 @@
-import { createElement, type FC, HTMLAttributes } from "react"
-import { cva, type VariantProps } from "class-variance-authority"
+import { createElement, type FC } from "react"
+import { cva } from "class-variance-authority"
+import { HeadingProps, HeadingTag } from "./heading.def"
+import { twMerge } from "tailwind-merge"
 
-const headingVariant = cva("text-black dark:text-white", {
+export const headingClasses = cva("text-black dark:text-white", {
   variants: {
     as: {
       h1: ["text-5xl", "md:text-6xl", "font-bold", "leading-tight"],
@@ -14,19 +16,11 @@ const headingVariant = cva("text-black dark:text-white", {
   },
 })
 
-type HeadingTag = `h${1 | 2 | 3 | 4 | 5 | 6}`
-
-interface HeadingProps
-  extends HTMLAttributes<HTMLHeadingElement>,
-    VariantProps<typeof headingVariant> {
-  as?: HeadingTag
-}
-
 const makeHeading = (tag: HeadingTag): FC<HeadingProps> => {
   return function Heading({ as = tag, className, ...otherProps }) {
     return createElement(as, {
       ...otherProps,
-      className: headingVariant({ as, className }),
+      className: twMerge(headingClasses({ as, className })),
     })
   }
 }

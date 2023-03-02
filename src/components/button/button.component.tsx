@@ -1,23 +1,10 @@
 import Link from "next/link"
-import { cva, VariantProps } from "class-variance-authority"
-import { AnchorHTMLAttributes, ButtonHTMLAttributes } from "react"
-import clsx from "clsx"
+import { cva } from "class-variance-authority"
+import { FC } from "react"
+import { ButtonProps } from "./button.def"
+import { twMerge } from "tailwind-merge"
 
-type ButtonBaseProps = VariantProps<typeof buttonClasses> & {
-  children: React.ReactNode
-}
-
-interface ButtonAsAnchorProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
-  href: string
-}
-
-interface ButtonAsButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  href?: never
-}
-
-type ButtonProps = ButtonBaseProps & (ButtonAsAnchorProps | ButtonAsButtonProps)
-
-const buttonClasses = cva(
+export const buttonClasses = cva(
   "relative rounded-[10px] inline-flex items-center text-white",
   {
     variants: {
@@ -38,16 +25,19 @@ const buttonClasses = cva(
   }
 )
 
-export const Highlight = ({
+export const Button: FC<ButtonProps> = ({
   children,
-  className,
-}: {
-  children: React.ReactNode
-  className?: string
-}) => <span className={clsx("highlight", className)}>{children}</span>
-
-export const Button = ({ children, variant, size, ...props }: ButtonProps) => {
-  const classes = buttonClasses({ variant, size, className: props.className })
+  variant,
+  size,
+  ...props
+}) => {
+  const classes = twMerge(
+    buttonClasses({
+      variant,
+      size,
+      className: props.className,
+    })
+  )
 
   if ("href" in props && props.href !== undefined) {
     return (
