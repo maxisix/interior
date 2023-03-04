@@ -2,20 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --grey-120: #303137;
+  }
+
+  .dark {
+    --grey-120: #f9f9fa;
+  }
+
+  /* An other alternative
+  [data-theme="dark"] {
+    --grey-120: #f9f9fa;
+  } */
+}
+
 @layer components {
-  .publicite_label:has(+ .publicite iframe[width='300']) {
+  .publicite_label:has(+ .publicite iframe[width="300"]) {
     width: 300px;
   }
 
-  .publicite_label:has(+ .publicite iframe[width='320']) {
+  .publicite_label:has(+ .publicite iframe[width="320"]) {
     width: 320px;
   }
 
-  .publicite_label:has(+ .publicite iframe[width='728']) {
+  .publicite_label:has(+ .publicite iframe[width="728"]) {
     width: 728px;
   }
 
-  .publicite_label:has(+ .publicite iframe[width='970']) {
+  .publicite_label:has(+ .publicite iframe[width="970"]) {
     width: 970px;
   }
 }
