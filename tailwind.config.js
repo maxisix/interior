@@ -13,6 +13,8 @@ module.exports = {
     extend: {
       colors: {
         "grey-120": "var(--grey-120)",
+        "bg-primary": "var(--bg-primary)",
+        "text-primary": "var(--text-primary)",
       },
       backgroundImage: {
         gradient:

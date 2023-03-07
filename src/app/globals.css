@@ -5,10 +5,16 @@
 @layer base {
   :root {
     --grey-120: #303137;
+    --bg-primary: #fff;
+    --text-primary: #000;
+    color-scheme: light;
   }
 
   .dark {
     --grey-120: #f9f9fa;
+    --bg-primary: #000;
+    --text-primary: #fff;
+    color-scheme: dark;
   }
 
   /* An other alternative
